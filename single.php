@@ -3,7 +3,7 @@
 
 <div id="accueil" class="global">
     <section>
-        <h2>Accueil (h2)</h2>
+        <h2>Accueil </h2>
         <div class="cours">
         <?php
         /*
@@ -30,7 +30,7 @@
 
 <div id="galerie" class="global">
     <section>
-        <h2>Galerie (h2)</h2>
+        <h2>Galerie</h2>
     </section>
 
 

@@ -191,6 +191,7 @@ footer a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 1rem;
   gap: 2rem;
   z-index: 59;
   background-color: rgb(0, 111, 119);
