@@ -365,6 +365,14 @@ footer a:visited {
   font-size: clamp(0.2rem, -1.292rem + 73335vw, 0.75rem);
 }
 
+.menu-item a:hover {
+  padding: 2vw;
+  transition: all 0.5s;
+  color: palevioletred;
+  background-color: rgb(129, 35, 35);
+  font-size: clamp(0.5rem, -1.292rem + 73335vw, 1rem);
+}
+
 /* gestion label #burger l'image svg est dans un label */
 #burger {
   display: block;
