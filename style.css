@@ -299,7 +299,7 @@ footer a:visited {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: blue;
+  background-color: rgb(66, 66, 129);
   z-index: -1;
   transform: skewY(-5deg);
 }
@@ -342,6 +342,7 @@ footer a:visited {
 .menu {
   position: absolute;
   display: flex;
+  width: 80%;
   list-style-type: none;
   justify-content: space-between;
   flex-direction: column;
@@ -358,8 +359,10 @@ footer a:visited {
   }
 }
 .menu-item a {
+  padding: 2vw;
   transition: all 0.5s;
   color: palevioletred;
+  font-size: clamp(0.2rem, -1.292rem + 73335vw, 0.75rem);
 }
 
 /* gestion label #burger l'image svg est dans un label */
@@ -393,6 +396,7 @@ footer a:visited {
   */
   --u1: 180;
   --u2: calc(var(--u1) + 180);
+  --u5: calc(var(--u1) + 380);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
   --s-arriere: 100%;
@@ -405,7 +409,7 @@ footer a:visited {
   --couleur-arriere-footer: hsl(var(--u1),var(--s-arriere), var(--l-arriere)) ;
   --couleur-arriere-entete: hsl(var(--u1),var(--s-avant), var(--l-avant)) ;
   --couleur-arriere-accueil: hsl(var(--u2),var(--s-avant), var(--l-avant)) ;
-  --couleur-arriere-evenement: hsl(var(--u2),var(--s-avant), var(--l-avant)) ;
+  --couleur-arriere-evenement: hsl(var(--u5),var(--s-avant), var(--l-avant)) ;
   --couleur-arriere-galerie: hsl(var(--u4),var(--s-avant), var(--l-avant)) ;
   --couleur-arriere-footer: hsl(var(--u1),var(--s-avant), var(--l-avant)) ;
 }
@@ -439,11 +443,11 @@ footer a:visited {
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(220, 47%, 21%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(220, 47%, 21%);
 }
 
 .clr-primaire-400 {
