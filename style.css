@@ -342,12 +342,13 @@ footer a:visited {
 .menu {
   position: absolute;
   display: flex;
-  width: 80%;
+  height: auto;
   list-style-type: none;
   justify-content: space-between;
   flex-direction: column;
   transform: translateX(300%);
   transition: all 0.5s;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 700px) {
@@ -358,15 +359,18 @@ footer a:visited {
     transform: translateX(0);
   }
 }
+.menu-item {
+  min-width: 5rem;
+}
+
 .menu-item a {
-  padding: 2vw;
   transition: all 0.5s;
   color: palevioletred;
   font-size: clamp(0.2rem, -1.292rem + 73335vw, 0.75rem);
 }
 
 .menu-item a:hover {
-  padding: 2vw;
+  padding: 1vw;
   transition: all 0.5s;
   color: palevioletred;
   background-color: rgb(129, 35, 35);
