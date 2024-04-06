@@ -44,10 +44,15 @@ fait
 ## Améliorer l'apparence de la liste des catégories
 fait
 ## Améliorer l'apparence de chacune des cartes
+fait
 ## Afficher des cartes de catégories pour l'ensemble des catégories (2 points)
+fait
 ## Titre de la catégorie
+fait
 ## 10 premiers mot de la description
+fait
 ## Un lien permet d'accéder à la liste des destination de cette catégorie
+fait
 ## Le nombre d'article pour cette catégorie
 
 
