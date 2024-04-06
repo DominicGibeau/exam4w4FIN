@@ -13,7 +13,7 @@
 </div>
 <div id="accueil" class="global">
     <section>
-        <h2>Accueil</h2>
+        <h2>recherche :<?= get_search_query() ?> </h2>
         <div class="cours">
         <?php if (have_posts()):
             while(have_posts()): the_post(); ?>
@@ -36,38 +36,7 @@
         </div>
     </section>
 </div>
-<div class="cours">
-<?php
-// Récupérer les catégories de WordPress
-$categories = get_categories();
 
-// Boucle à travers chaque catégorie
-foreach ($categories as $category) {
-    // Récupérer le titre de la catégorie
-    $cat_title = $category->name;
-
-    // Récupérer la description de la catégorie
-    $cat_description = $category->description;
-
-    // Limiter la description à 10 mots
-    $cat_description_short = implode(' ', array_slice(explode(' ', $cat_description), 0, 10));
-
-    // Récupérer le lien vers la liste des articles de cette catégorie
-    $cat_link = get_category_link($category->cat_ID);
-
-    // Récupérer le nombre d'articles dans cette catégorie
-    $cat_post_count = $category->count;
-    ?>
-
-    <div class="carte">
-        <h2><?php echo $cat_title; ?></h2>
-        <p><?php echo $cat_description_short; ?>...</p>
-        <a href="<?php echo $cat_link; ?>">Voir les destinations</a>
-        <p>Nombre d'articles : <?php echo $cat_post_count; ?></p>
-    </div>
-
-<?php } ?>
-</div>
 
 <div id="evenement" class="global diagonal">
 

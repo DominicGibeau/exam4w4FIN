@@ -17,6 +17,10 @@
 <h5>Laugh and cry!</h5> 
 
 <h5>He's our Family Guy!</h5> 
+
+<?php wp_nav_menu(array("menu" => "footer","container" => "nav")); ?>
+
+<?php  get_search_form(); ?>
 </footer>
 
 

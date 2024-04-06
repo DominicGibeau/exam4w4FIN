@@ -88,3 +88,13 @@ padding: 2vw;
   #chk_burger:checked ~  .menu__header .menu {
     transform: translateX(0);
   }
+
+
+
+  .custom-logo{
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+
+padding: 40px;
+  }

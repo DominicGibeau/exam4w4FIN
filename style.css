@@ -390,6 +390,13 @@ footer a:visited {
   transform: translateX(0);
 }
 
+.custom-logo {
+  display: flex;
+  width: 5vw;
+  height: 5vw;
+  padding: 40px;
+}
+
 /* variable sass
 
 // pallette de couleur
