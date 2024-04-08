@@ -11,7 +11,7 @@ ________________________________________________________________________________
 ## il est sur le thème de obama si vous aviez pas remarqué
 ## les couleurs délaver sont complémentaire
 
-## j'ai fait un total de 21 commit (j'en ai 13 dans le premier dosier tp1, 5 dans TP1 et j'en ai fait 3 dans 4w4 avant de comprendre que je devais le faire dans tp1)
+## j'ai fait un total de 22 commit (j'en ai 14 dans le premier dosier tp1, 5 dans TP1 et j'en ai fait 3 dans 4w4 avant de comprendre que je devais le faire dans tp1)
 
 
 ## lien Site Web local ----->

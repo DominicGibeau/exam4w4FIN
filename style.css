@@ -340,6 +340,7 @@ footer a:visited {
 }
 
 .menu {
+  background-color: none;
   position: absolute;
   display: flex;
   height: auto;
@@ -370,7 +371,6 @@ footer a:visited {
 }
 
 .menu-item a:hover {
-  padding: 1vw;
   transition: all 0.5s;
   color: palevioletred;
   background-color: rgb(129, 35, 35);
@@ -389,16 +389,38 @@ footer a:visited {
   #burger {
     display: none;
   }
+  .menu-item {
+    min-width: 3rem;
+  }
 }
 #chk_burger:checked ~ .menu__header .menu {
   transform: translateX(0);
 }
 
+@media (min-width: 320px) {
+  .menu {
+    background-color: rgb(134, 47, 47);
+  }
+}
 .custom-logo {
   display: flex;
   width: 5vw;
   height: 5vw;
   padding: 40px;
+}
+
+.recherche {
+  display: flex;
+  flex: 1 1 1100px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+
+.recherche label {
+  width: 100%;
+  display: flex;
 }
 
 /* variable sass

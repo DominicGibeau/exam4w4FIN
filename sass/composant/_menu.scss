@@ -33,7 +33,7 @@ list-style-type: none;
 
 
 .menu {
-
+background-color: none;
     position: absolute;
     display: flex;
  height: auto;
@@ -68,7 +68,7 @@ list-style-type: none;
     font-size: clamp(0.2rem, -1.292rem + 73335vw, 0.75rem);
   }
   .menu-item a:hover {
-    padding: 1vw;
+   // padding: 1vw;
         transition: all 0.5s;
         color: palevioletred;
        background-color: rgb(129, 35, 35);
@@ -86,13 +86,23 @@ list-style-type: none;
     #burger {
       display: none;
     }
+    .menu-item{
+      min-width: 3rem;
+    }
+
   }
   
   #chk_burger:checked ~  .menu__header .menu {
     transform: translateX(0);
   }
+  @media (min-width: 320px) {
+    .menu {
+      background-color: rgb(134, 47, 47);
+      
+      }
+  }
 
-
+  
 
   .custom-logo{
     display: flex;
@@ -100,4 +110,26 @@ list-style-type: none;
     height: 5vw;
 
 padding: 40px;
+  }
+
+
+
+
+
+
+.recherche{
+  display: flex;
+  flex: 1 1 1100px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%
+
+}
+
+
+.recherche label {
+  width: 100%;
+  display: flex
+
   }
