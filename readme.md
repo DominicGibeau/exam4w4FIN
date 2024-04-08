@@ -1,3 +1,41 @@
+
+_________________________________________________________________________________________________
+
+
+
+## creer par Dominic Gibeau 
+
+## the obama flying site
+
+## le site est une courte page web où faire vos réservation pour vos voyage
+## il est sur le thème de obama si vous aviez pas remarqué
+## les couleurs délaver sont complémentaire
+
+## j'ai fait un total de 21 commit (j'en ai 13 dans le premier dosier tp1, 5 dans TP1 et j'en ai fait 3 dans 4w4 avant de comprendre que je devais le faire dans tp1)
+
+
+## lien Site Web local ----->
+## https://github.com/DominicGibeau/joliSiteWeb/tree/TP1
+
+ ## lien Site Web whc ----->
+## https://gftnth00.mywhc.ca/tim15/wp-admin/
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________
+
+
+instruciton pour la progression
+
+
+
+
 # exer1
 ## continuer le développement du lab 2
 ## https://github.com/DominicGibeau
@@ -60,4 +98,15 @@ fait
 ## Ajouter l'adresse de la github-page dans votre readme.
 ## Dans le readme.md
 ## Le nom de l'auteur
-## Courte description de votre tp1
+## Courte description de votre tp1<
+
+
+
+
+
+
+
+
+
+
+
