@@ -88,7 +88,10 @@ padding: 2vh;
     width: 13vw;
 }
 
-
+#leTexteDerreur h2{
+    background-color: rgb(105, 52, 52) ;
+    border-radius: 25%;
+}
 
 
 @media (min-width: 700px) {
@@ -99,4 +102,18 @@ padding: 2vh;
         width: 50%;
         height: 50%;
     }
+   
+    #lImage404:hover {
+        background-image: url(img/obama.png);
+    background-size: contain;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 50%;
+    }
+  }
+
+
+
+  #erreur_404 button:hover{
+background-color: wheat;
   }

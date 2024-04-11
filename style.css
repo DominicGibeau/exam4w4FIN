@@ -133,6 +133,11 @@ body {
   width: 13vw;
 }
 
+#leTexteDerreur h2 {
+  background-color: rgb(105, 52, 52);
+  border-radius: 25%;
+}
+
 @media (min-width: 700px) {
   #lImage404 {
     background-image: url(img/heyLois.png);
@@ -141,7 +146,18 @@ body {
     width: 50%;
     height: 50%;
   }
+  #lImage404:hover {
+    background-image: url(img/obama.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+  }
 }
+#erreur_404 button:hover {
+  background-color: wheat;
+}
+
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
