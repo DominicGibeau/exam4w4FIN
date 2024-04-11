@@ -105,6 +105,11 @@ body {
   position: relative;
 }
 
+#erreur_404 {
+  display: flex;
+  height: 70vh;
+}
+
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;

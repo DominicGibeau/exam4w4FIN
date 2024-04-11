@@ -4,20 +4,37 @@
 
 
         <div id="erreur_404" class="global">
-            <section>
-                <h2>erreur 404</h2>
-<p>vous essayer d'acceder a une page qui n'existe pas</p>
 
-<?php get_bloginfo("name"); get_bloginfo('url') ?>
+
+
+
+
+          <div id="leTexteDerreur">
+            
+          <h2>erreur 404</h2>
+        
+          <p>vous essayer d'acceder a une page qui n'existe pas</p>
+        
+          <p>pour revenir a la page d'acceuil cliquer sur le lien suivant</p>
+        
+        
+        
+        </div>
+               
+
+
+<h4><?php echo get_bloginfo("name"); ?></h4>
+<h5><?php echo get_bloginfo("url"); ?></h5>
+
+</div>
 
         <div id="footer" class="global">
 
          
 
             <footer>
-                <h2>Footer</h2>
-              
-                <a href="https://www.youtube.com/channel/UCtaLgfIokNyxrX03heg888g">voici mon youtube</a>
+        
+                <?php get_footer(); ?>
              
             </footer>
 
@@ -32,3 +49,4 @@
         </div>
     </body>
 </html>
+
