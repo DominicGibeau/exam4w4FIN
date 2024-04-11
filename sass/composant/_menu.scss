@@ -47,13 +47,14 @@ background-color: none;
 
   #leMiniMenu .menu {
     background-color: none;
-      
+      width: 50%;
         display: flex;
      height: auto;
         list-style-type: none;
         justify-content: space-between;
-   
-      
+   justify-content: center;
+   align-items: center;
+        transform: translateX(-25vw);
         transition: all 0.5s;
         flex-wrap: wrap;
       }
@@ -66,6 +67,22 @@ background-color: none;
       display: flex;
       transform: translateX(0);
     }
+
+
+
+    #leMiniMenu .menu {
+      background-color: none;
+        width: 35vw;
+          display: flex;
+       height: auto;
+          list-style-type: none;
+          justify-content: space-between;
+     justify-content: center;
+     align-items: center;
+          transform: translateX(0);
+          transition: all 0.5s;
+          flex-wrap: wrap;
+        }
   }
   .menu-item{
     min-width: 5rem;

@@ -18,7 +18,7 @@
           <p>pour revenir a la page d'acceuil cliquer sur le lien suivant</p>
 
 
-          <button>Événements</button>
+          <button> <a href="https://gftnth00.mywhc.ca/tim15/">jfa dmon mieu ok</a></button>
           <?php  get_search_form(); ?>
           <div id="leMiniMenu">
               <?php wp_nav_menu(array("menu" => "principal","container" => "nav")); ?>
@@ -33,8 +33,7 @@
       <img src="img/aucune idée.png" alt="">
       
 
-<h4><?php echo get_bloginfo("name"); ?></h4>
-<h5><?php echo get_bloginfo("url"); ?></h5>
+
 </div>
 </div>
 

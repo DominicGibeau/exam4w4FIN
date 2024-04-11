@@ -116,21 +116,32 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
   width: 100%;
   height: 50%;
 }
 
+#leTexteDerreur p {
+  padding: 2vh;
+}
+
 #lImage404 {
-  background-image: url(img/heyLois.png);
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 50%;
+  background-image: none;
 }
 
 #lImage404 img {
   width: 13vw;
 }
 
+@media (min-width: 700px) {
+  #lImage404 {
+    background-image: url(img/heyLois.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+  }
+}
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
@@ -380,10 +391,14 @@ footer a:visited {
 
 #leMiniMenu .menu {
   background-color: none;
+  width: 50%;
   display: flex;
   height: auto;
   list-style-type: none;
   justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-25vw);
   transition: all 0.5s;
   flex-wrap: wrap;
 }
@@ -394,6 +409,19 @@ footer a:visited {
     flex-direction: row;
     display: flex;
     transform: translateX(0);
+  }
+  #leMiniMenu .menu {
+    background-color: none;
+    width: 35vw;
+    display: flex;
+    height: auto;
+    list-style-type: none;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 0.5s;
+    flex-wrap: wrap;
   }
 }
 .menu-item {
