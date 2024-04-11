@@ -45,7 +45,18 @@ background-color: none;
     flex-wrap: wrap;
   }
 
-
+  #leMiniMenu .menu {
+    background-color: none;
+      
+        display: flex;
+     height: auto;
+        list-style-type: none;
+        justify-content: space-between;
+   
+      
+        transition: all 0.5s;
+        flex-wrap: wrap;
+      }
 
   
   @media (min-width: 700px) {
@@ -123,7 +134,7 @@ padding: 40px;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 80%
+
 
 }
 

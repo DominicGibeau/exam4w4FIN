@@ -16,16 +16,26 @@
           <p>vous essayer d'acceder a une page qui n'existe pas</p>
         
           <p>pour revenir a la page d'acceuil cliquer sur le lien suivant</p>
+
+
+          <button>Événements</button>
+          <?php  get_search_form(); ?>
+          <div id="leMiniMenu">
+              <?php wp_nav_menu(array("menu" => "principal","container" => "nav")); ?>
+            </div>
         
-        
-        
+    
         </div>
                
+        <div id="lImage404">
 
+   
+      <img src="img/aucune idée.png" alt="">
+      
 
 <h4><?php echo get_bloginfo("name"); ?></h4>
 <h5><?php echo get_bloginfo("url"); ?></h5>
-
+</div>
 </div>
 
         <div id="footer" class="global">
