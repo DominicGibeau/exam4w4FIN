@@ -29,6 +29,9 @@ function enqueue_style_script() {
         // true pour mettre le script en bas de page
 }
 
+//il faut wp_head(); soit ajouter
+
+
 add_action('wp_enqueue_scripts', 'enqueue_style_script');
 
 function genere_html() {
@@ -42,4 +45,10 @@ function genere_html() {
     ';
     return $html;
 }
-    ?>
+
+// [carrousel juste après la galerie dans votre article ou page]
+// quand la fonction the_content() rencontrera [carrousel] c'est à se moment
+// que le carrousel sera initialisé
+
+add_shortcode('carrousel', 'genere_html');
+   
