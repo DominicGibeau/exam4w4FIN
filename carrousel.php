@@ -36,7 +36,7 @@ add_action('wp_enqueue_scripts', 'enqueue_style_script');
 
 function genere_html() {
     $html = '
-    <button class="bouton__ouvrir">Ouvrir Carrousel</button>
+   
     <div class="carrousel">
         <a href="" class="carrousel__x">X</a>
         <figure class="carrousel__figure"></figure>

@@ -7,7 +7,7 @@ function creer_image_carrousel
 
     console.log("vive JS")
     let carrousel = document.querySelector('.carrousel')
-    let bouton = document.querySelector('.bouton__ouvrir')
+  //  let bouton = document.querySelector('.bouton__ouvrir')
     let carrousel__x = document.querySelector('.carrousel__x')
     let galerie = document.querySelector('.galerie')
     console.log(galerie.tagName);
@@ -43,7 +43,21 @@ creer_radio_carrousel(index)
     console.log(elm.dataset.index);
     carrousel__radios[elm.dataset.index].checked = true;
     activerLaBonneImg(elm.dataset.index);
+ 
+
 });
+
+function activerLaBonneImg(index){
+    for (const elm of carrousel__figure) {
+
+        elm.style.opacity = 0;
+
+        if(elm.dataset.index == index){
+            elm.style.opacity = 1;
+        }
+    }
+}
+
 
 index = index + 1
     }
@@ -157,6 +171,8 @@ function creer_image_carrousel(elm, index){
 
 
 
+
+/*
 bouton.addEventListener('mousedown', function(){
     carrousel.classList.add('carrousel--ouvrir') // ouvrir le carrousel
     document.querySelector('body').style.overflow = "hidden"
@@ -167,7 +183,7 @@ carrousel__x.addEventListener('mousedown', function(){
     
     carrousel.classList.remove('carrousel--ouvrir') // fermer le carrousel
     document.querySelector('body').style.overflow = "visible"
-
+   
 
     console.log('fermer carrousel')
 })
