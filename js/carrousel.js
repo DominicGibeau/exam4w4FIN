@@ -148,7 +148,10 @@ index = index + 1
         //ajouter un écouteur permettant de changer l'image du carrousel selon l'index du radio
         //carrousel__img.children[index].sttyle.opacity = 1; pour changer l'opacité de l'image
         carrousel__radio.addEventListener('click', function(){
+            carrousel__imgs[index].style.opacity = 0;
+
             let index = this.dataset.index;
+           
             let carrousel__imgs = document.querySelectorAll('.carrousel__img');
             for (const img of carrousel__imgs) {
                 img.style.opacity = 0;
@@ -158,11 +161,14 @@ index = index + 1
     }
 
 function creer_image_carrousel(elm, index){
+
+
     let carrousel__img = document.createElement('img');
+
     carrousel__img.classList.add('carrousel__img');
     carrousel__img.src = elm.src; 
     carrousel__img.dataset.index = index;
-
+   
     console.log(elm.src)
 
     carrousel__figure.appendChild(carrousel__img);
