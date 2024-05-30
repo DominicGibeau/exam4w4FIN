@@ -91,25 +91,7 @@ index = index + 1
     console.log(form);
     
     //appelé un fonction à partir du bouton de droite
-    carrousel__fleche__droite.addEventListener('click', function(){
-        let index = 0;
-        for (const radio of carrousel__radios) {
-            if(radio.checked){
-                radio.checked = false;
-                carrousel__imgs[index].style.opacity = 0;
-                if(index == carrousel__radios.length - 1){
-                    index = 0;
-                }else{
-                    index++;
-                }
-                carrousel__radios[index].checked = true;
-                carrousel__imgs[index].style.opacity = 1;
-                break;
-            }
-            index++;
-        }
-    });
-    
+
     //appelé un fonction à partir du bouton de gauche
     carrousel__fleche__gauche.addEventListener('click', function(){
         let index = 0;
@@ -131,10 +113,28 @@ index = index + 1
     }
     
     );
+    carrousel__fleche__droite.addEventListener('click', function(){
+        let index = 0;
+        for (const radio of carrousel__radios) {
+            if(radio.checked){
+                radio.checked = false;
+                carrousel__imgs[index].style.opacity = 0;
+                if(index == carrousel__radios.length - 1){
+                    index = 0;
+                }else{
+                    index++;
+                }
+                carrousel__radios[index].checked = true;
+                carrousel__imgs[index].style.opacity = 1;
+                break;
+            }
+            index++;
+        }
+    });
     
-    
-    carrousel.appendChild(carrousel__fleche__droite);
     carrousel.appendChild(carrousel__fleche__gauche);
+    carrousel.appendChild(carrousel__fleche__droite);
+ 
     
 
 
@@ -148,7 +148,8 @@ index = index + 1
         //ajouter un écouteur permettant de changer l'image du carrousel selon l'index du radio
         //carrousel__img.children[index].sttyle.opacity = 1; pour changer l'opacité de l'image
         carrousel__radio.addEventListener('click', function(){
-            carrousel__imgs[index].style.opacity = 0;
+
+            carrousel__imgs[index].style.opacity = 0; ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             let index = this.dataset.index;
            
