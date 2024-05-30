@@ -38,15 +38,19 @@ creer_image_carrousel(elm, index)
 creer_radio_carrousel(index)
 
   //ajouter un event listener sur les image
-  elm.addEventListener('click', function(){
+  elm.addEventListener('click', function(e){
     carrousel.classList.add('carrousel--ouvrir');
     console.log(elm.dataset.index);
     carrousel__radios[elm.dataset.index].checked = true;
-    activerLaBonneImg(elm.dataset.index);
- 
+
+    index = e.target.dataset.index;
+
+    galerie__imgs[index].style.opacity = 1;
+   
+    creer_radio_carrousel
 
 });
-
+/*
 function activerLaBonneImg(index){
     for (const elm of carrousel__figure) {
 
@@ -57,7 +61,7 @@ function activerLaBonneImg(index){
         }
     }
 }
-
+*/
 
 index = index + 1
     }
@@ -68,8 +72,9 @@ index = index + 1
    //carrousel__radios[0].checked = true;
    //mettre la première image en opacité 1 et les autres en 0
    let carrousel__imgs = carrousel__figure.querySelectorAll('.carrousel__img');
-   for (const img of carrousel__imgs) {
-       img.style.opacity = 0;
+   console.log(carrousel__imgs.length);
+   for (let i; i< carrousel__imgs.length; i++) {
+    carrousel__imgs[i].style.opacity = 0;
    }
    carrousel__imgs[0].style.opacity = 1;
    
@@ -139,6 +144,8 @@ index = index + 1
 
 
     function creer_radio_carrousel(index){
+   
+
         let carrousel__radio = document.createElement('input');
         carrousel__radio.classList.add("carrousel__radio");
         carrousel__radio.type = 'radio';
@@ -147,18 +154,24 @@ index = index + 1
         form.appendChild(carrousel__radio);
         //ajouter un écouteur permettant de changer l'image du carrousel selon l'index du radio
         //carrousel__img.children[index].sttyle.opacity = 1; pour changer l'opacité de l'image
-        carrousel__radio.addEventListener('click', function(){
+      
+        carrousel__radio.addEventListener('click', function(e){
 
-            carrousel__imgs[index].style.opacity = 0; ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //  carrousel__imgs[index].style.opacity = 0; ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+              let index = e.target.dataset.index;
+             
+              let carrousel__imgs = document.querySelectorAll('.carrousel__img');
+              for (const img of carrousel__imgs) {
+                  img.style.opacity = 0;
+              }
+          //    carrousel__imgs[index].style.opacity = 1;
+    
+          carrousel__imgs[index].style.opacity =1;
+              console.log("sa marche à peine");
+          });
+    
 
-            let index = this.dataset.index;
-           
-            let carrousel__imgs = document.querySelectorAll('.carrousel__img');
-            for (const img of carrousel__imgs) {
-                img.style.opacity = 0;
-            }
-            carrousel__imgs[index].style.opacity = 1;
-        });
     }
 
 function creer_image_carrousel(elm, index){
@@ -173,6 +186,9 @@ function creer_image_carrousel(elm, index){
     console.log(elm.src)
 
     carrousel__figure.appendChild(carrousel__img);
+
+   
+
 }
 
 
