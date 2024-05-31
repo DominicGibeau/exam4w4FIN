@@ -18,7 +18,7 @@ ________________________________________________________________________________
 ## https://github.com/DominicGibeau/joliSiteWeb/tree/TP1
 
  ## lien Site Web whc ----->
-## https://gftnth00.mywhc.ca/tim15/wp-admin/
+## https://gftnth00.mywhc.ca/tim15/
 
 
 

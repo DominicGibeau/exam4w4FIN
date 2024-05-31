@@ -33,5 +33,7 @@
     @each $valeur, $clr in $agencement-couleur {
         .clr-agencement-#{$valeur} {
             @include couleur-agencement($clr...);
+            color: hsl(10, 100%, 15%);
+            background-image: linear-gradient(90deg, hsl(39.85deg 100% 53.96%), hsl(202.67deg 100% 79.57%));
         }
     } 

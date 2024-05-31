@@ -7,6 +7,17 @@
     line-height: 0;
 }
 
+#laVagueQuiGosse .vague {
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 900;
+}
+
+
 .vague svg {
     position: relative;
     display: block;
@@ -66,6 +77,8 @@ color: black solid ;
 }
 
 
-
+.vague path{
+    fill: rgb(71, 170, 236);
+}
 
 

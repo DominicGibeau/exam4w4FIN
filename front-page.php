@@ -7,25 +7,59 @@
        
         <h2><?php echo get_bloginfo("name"); ?></h2>
         <h3><?php echo get_bloginfo("description"); ?></h3>
-        <button>Événements</button>
+      
+
+
+        <button>
+            <a href="https://gftnth00.mywhc.ca/tim15/conference/">Événements</a>
+        </button>
+    
+        <div class="logo">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-suse"></i>
+        <i class="fa-brands fa-trello"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+       
+
     </section>
 <?php get_template_part("gabarits/vague"); ?>
 </div>
+
+<!--
+<div id="ptiAvion">
+<img src="img/petitAvion.png" alt="">
+</div>
+-->
+
 <div id="accueil" class="global">
     <section>
-        <h2>Accueil</h2>
+        <h2>Destination populaire</h2>
         <div class="cours">
         <?php if (have_posts()):
             while(have_posts()): the_post(); ?>
 
-            <div class="carte">
 
-                <h3><?php the_title(); ?></h3>  
+ 
 
-                <p><?php echo wp_trim_words(get_the_content(),10); ?> </p>
-                
-             <a href="<?php the_permalink(); ?>" >Suite</a>
-            </div> 
+
+ <?php
+
+ $ma_carte = "carte";
+ 
+if(in_category('galerie')){
+
+$ma_carte = "galerie";
+
+}
+
+get_template_part("gabarits/categorie", $ma_carte);
+?>
+
+
+
            <?php endwhile; ?>
         <?php endif; ?>
 
@@ -54,7 +88,9 @@ foreach ($categories as $category) {
 
     // Récupérer le lien vers la liste des articles de cette catégorie
     $cat_link = get_category_link($category->cat_ID);
-
+if($cat_title == "Pays"){
+    $cat_link = get_category_link($category->pays);
+}
     // Récupérer le nombre d'articles dans cette catégorie
     $cat_post_count = $category->count;
     ?>
@@ -69,19 +105,38 @@ foreach ($categories as $category) {
 <?php } ?>
 </div>
 
-<div id="evenement" class="global diagonal">
+
+<!--
+
+<div id="evenement"  class="global" >
 
 
 
     <section>
         <h2>Événement</h2>
+
+        <?php
+// Appel du shortcode directement dans le fichier front-page.php
+//echo do_shortcode('[em_destination]');
+?>
+
     </section>
+ 
+
 </div>
+
+-->
+
+
 <div id="galerie" class="global">
     <section>
         <h2>les destination par catégories</h2>
-
-
+<div id="lesDestinations">
+        <?php
+// Appel du shortcode directement dans le fichier front-page.php
+echo do_shortcode('[em_destination]');
+?>
+</div>
         <article class="flexbox"> 
  
 <?php 

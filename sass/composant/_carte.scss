@@ -1,13 +1,18 @@
-.cours{
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
-padding: 1rem;
-gap: 2rem;
-z-index: 59;
-background-color: rgb(0, 111, 119);
-}
 
+
+.cours{
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    z-index: 59;
+    background-color: rgb(0, 111, 119);
+    }
+    
+  
 .carte{
 display: flex;
 flex-direction: column;
@@ -16,11 +21,46 @@ flex: 0 1 20%;
 border: 1px solid rgb(139, 11, 11);
 justify-content: center;
 padding: 0.5rem;
-font-size: small;
+font-size: 1rem;
 background-color: rgb(173, 10, 10);
 border-radius: 20px;
 color: white;
+margin: 1rem;
 }
+
+
+@media (min-width: 700px) {
+    
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 20%;
+    border: 1px solid rgb(139, 11, 11);
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 2vw;
+    background-color: rgb(173, 10, 10);
+    border-radius: 20px;
+    color: white;
+    margin: 1rem;
+    }
+    .cours{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+            z-index: 59;
+            background-color: rgb(0, 111, 119);
+            }
+            
+
+    
+    }
+
 
 .post-categories{
     display: flex;

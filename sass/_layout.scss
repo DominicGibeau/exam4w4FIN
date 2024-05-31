@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 body {
     display: flex;
@@ -34,8 +35,8 @@ body {
 
 
 #entete {
-    background-color: var(--couleur-arriere-entete);
-    color: var(--couleur-arriere-entete);
+    background-color: rgb(50, 145, 50);
+    color: rgb(50, 145, 50);
     position: relative;
 }
 #acceuil {
@@ -117,3 +118,15 @@ padding: 2vh;
   #erreur_404 button:hover{
 background-color: wheat;
   }
+
+
+
+  #singleDIV .carte{
+    width: 100%;
+    flex: auto;
+  }
+
+
+
+
+  

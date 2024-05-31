@@ -10,8 +10,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href=" <?php echo get_template_directory_uri(); ?>/normalize.css" />
         <link rel="stylesheet" href=" <?php echo get_template_directory_uri(); ?>/style.css" />
+       
+        <?php wp_head(); ?>
     </head>
     <body>
+    <script src="https://kit.fontawesome.com/590c6b8d3e.js" crossorigin="anonymous"></script>
 
 <div id="menu" class="global clr-agencement-ternaire">
 <?php echo get_custom_logo(); ?>
@@ -26,8 +29,10 @@
 <header class="menu__header">
 
 <?php wp_nav_menu(array("menu" => "principal","container" => "nav")); ?>
-
-
+<button>
+            <a href="https://gftnth00.mywhc.ca/tim15/les-plus-beau-pays/">Pays</a>
+        </button>
+<?php  get_search_form(); ?>
 
 
 </header>

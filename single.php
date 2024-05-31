@@ -1,9 +1,9 @@
 
 <?php get_header(); ?>
 
-<div id="accueil" class="global">
+<div id="singleDIV" class="global">
     <section>
-        <h2>Accueil </h2>
+       
         <div class="cours">
         <?php
         /*
@@ -21,6 +21,10 @@
                       <div class="carte">
                 <h3><?php the_title() ?></h3>  
                 <p><?php the_content(); ?> </p>
+<a href="<?php the_permalink(); ?>">Lire la suite</a>
+<p>Température minimum : <?php the_field('temperature_minimum');?> </p>
+<p>Température maximum : <?php the_field('temperature_maximum');?> </p>
+<p>Ville avoisinante : <?php the_field('ville_avoisinante');?> </p>
             </div> 
  
         <?php endif; ?>
@@ -37,3 +41,5 @@
 <?php  get_template_part('gabarits/vague'); ?>
 </div>
 <?php get_footer(); ?>
+
+
